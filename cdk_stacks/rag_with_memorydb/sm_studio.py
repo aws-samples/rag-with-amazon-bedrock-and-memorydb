@@ -139,8 +139,8 @@ class SageMakerStudioStack(Stack):
       "effect": aws_iam.Effect.ALLOW,
       "resources": ["*"],
       "actions": [
-        	"bedrock:InvokeModel",
-				"bedrock:InvokeModelWithResponseStream"
+        "bedrock:InvokeModel",
+        "bedrock:InvokeModelWithResponseStream"
       ]
     }))
 
