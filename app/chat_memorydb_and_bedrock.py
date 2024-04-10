@@ -141,7 +141,7 @@ if __name__ == "__main__":
     if 'source_documents' in result:
       print(bcolors.OKGREEN + 'Sources:')
       for d in result['source_documents']:
-        print(d.metadata['source'])
+        print(d.metadata['id'])
     print(bcolors.ENDC)
     print(bcolors.OKCYAN + "Ask a question, start a New search: or CTRL-D to exit." + bcolors.ENDC)
     print(">", end=" ", flush=True)

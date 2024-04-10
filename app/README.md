@@ -7,16 +7,16 @@ SageMaker Studio provides a convenient platform to host the Streamlit web applic
 1. Open Studio and then open a new **System terminal**.
 2. Run the following commands on the terminal to clone the code repository for this post and install the Python packages needed by the application:
    ```
-   git clone https://github.com/aws-samples/rag-with-amazon-bedrock-and-memorydb.git
+   git clone --depth=1 https://github.com/aws-samples/rag-with-amazon-bedrock-and-memorydb.git
    cd rag-with-amazon-bedrock-and-memorydb/app
    python -m venv .env
    source .env/bin/activate
 
    # install LangChain MemoryDB package
-   git clone https://github.com/aws-samples/amazon-memorydb-for-redis-samples.git
+   git clone --depth=1 https://github.com/aws-samples/amazon-memorydb-for-redis-samples.git
    cd ./amazon-memorydb-for-redis-samples/tutorials/langchain-memorydb
    pip install . # (NOTE: There is a DOT at the end.)
-
+   cd -
    pip install -U -r requirements.txt
    ```
 3. In the shell, set the following environment variables with the values that are available from the CloudFormation stack output.
