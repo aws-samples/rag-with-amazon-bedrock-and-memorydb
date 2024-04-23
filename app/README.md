@@ -25,7 +25,7 @@ SageMaker Studio provides a convenient platform to host the Streamlit web applic
    export MEMORYDB_SECRET_NAME="{<i>MemoryDB-Secret-Name</i>}"
    export REDIS_HOST="clustercfg.<i>{memorydb-cluster-name}</i>.memorydb.<i>{region}</i>.amazonaws.com"
    export INDEX_NAME="idx:vss-mm"
-   export BEDROCK_MODEL_ID="anthropic.claude-instant-v1"
+   export BEDROCK_MODEL_ID="anthropic.claude-v2:1"
    </pre>
    :information_source: `INDEX_NAME` can be found in [data ingestion to vectordb](../data_ingestion_to_vectordb/data_ingestion_to_memorydb.ipynb) step.
 4. When the application runs successfully, you’ll see an output similar to the following (the IP addresses you will see will be different from the ones shown in this example). Note the port number (typically `8501`) from the output to use as part of the URL for app in the next step.
