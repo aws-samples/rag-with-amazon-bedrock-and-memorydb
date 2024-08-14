@@ -11,12 +11,6 @@ SageMaker Studio provides a convenient platform to host the Streamlit web applic
    cd rag-with-amazon-bedrock-and-memorydb/app
    python -m venv .env
    source .env/bin/activate
-
-   # install LangChain MemoryDB package
-   git clone --depth=1 https://github.com/aws-samples/amazon-memorydb-for-redis-samples.git
-   cd ./amazon-memorydb-for-redis-samples/tutorials/langchain-memorydb
-   pip install . # (NOTE: There is a DOT at the end.)
-   cd -
    pip install -U -r requirements.txt
    ```
 3. In the shell, set the following environment variables with the values that are available from the CloudFormation stack output.
@@ -41,9 +35,9 @@ SageMaker Studio provides a convenient platform to host the Streamlit web applic
    ```
 5. You can access the app in a new browser tab using a URL that is similar to your Studio domain URL. For example, if your Studio URL is `https://d-randomidentifier.studio.us-east-1.sagemaker.aws/jupyter/default/lab?` then the URL for your Streamlit app will be `https://d-randomidentifier.studio.us-east-1.sagemaker.aws/jupyter/default/proxy/8501/app` (notice that `lab` is replaced with `proxy/8501/app`). If the port number noted in the previous step is different from 8501 then use that instead of 8501 in the URL for the Streamlit app.
 
-The following screenshot shows the app with a couple of user questions. (e.g., `What are some reasons a highly regulated industry should pick MemoryDB?`)
+    The following screenshot shows the app with a couple of user questions. (e.g., `What are some reasons a highly regulated industry should pick MemoryDB?`)
 
-![qa-with-llm-and-rag](./qa-with-llm-and-rag.png)
+    ![qa-with-llm-and-rag](./qa-with-llm-and-rag.png)
 
 ## References
 
