@@ -11,7 +11,7 @@ SageMaker Studio provides a convenient platform to host the Streamlit web applic
    cd rag-with-amazon-bedrock-and-memorydb/app
    python -m venv .env
    source .env/bin/activate
-   pip install -U -r requirements.txt
+   pip install -r requirements.txt
    ```
 3. In the shell, set the following environment variables with the values that are available from the CloudFormation stack output.
    <pre>
